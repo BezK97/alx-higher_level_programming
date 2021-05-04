@@ -48,7 +48,7 @@ int is_palindrome(listint_t **head)
   if (len % 2 == 0 && (*tmp).n != (*(*tmp).next).n)
     return (0);
 
-  tmp = ((*tmp).next).next;
+  tmp = (*(*tmp).next).next;
   rev = reverse_listint(&tmp);
   aux = rev;
 
